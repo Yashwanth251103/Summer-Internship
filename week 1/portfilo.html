@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+    <div id="header">    
+   <div class="container">
+    <nav>
+        <img src="IMAGES/logo.jpeg" class="logo">
+        <ul>
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#ABOUT">ABOUT</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+       
+    </nav>
+    <div><img src="IMAGES/image3.jpg" class="yash"></div>
+    
+    <div class="header-text">
+        <p>ARTIFICIAL INTELLIGECE ENGINEERING </p>
+        <h1>Hi, I'm <span>Yashwanth pavankumar k</span><br> </h1>
+    </div>
+   </div>
+   <!-----------about--------->
+   <div id="ABOUT">
+    <div class="container">
+        <div class="row">
+            <div class="ABOUT-col-1">
+                <img src="Yashwant Photo.jpeg" class="aboutme">
+            </div>
+            <div class="ABOUT-col-2">
+                <h1 class="subtitle">ABOUT ME: </h1>
+                <p>I'm Yashwanth pavanKumar K , currently pursuing my degree in NHCE Banglore. I am very interested in learning new things in different fields.
+                    I would like to be organize and honest.
+                    I have good communication skill with technical skills. I am a good learner and flexible.
+                    I am able to motivate myself and confident person.
+                    I can work unsupervised alone or as a member of a team and I like to showcase my skills whenever i will get opportunities.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                    <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>C Programming</span><br>Basics and Datastructures like Pointer,LinkedList and Trees and Graphs</li>
+                        <li><span>Web Development</span><br>HTML,CSS And JavaScript</li>
+                        <li><span>Java</span><br>Core Java Programming</li>
+                        <li><span>Advance Office Automation</span><br>MS Word,MS Excel,MS PowerPoint</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018-2019</span><br>Pragathi The School</li>
+                        <li><span>2019-2021</span><br> Pragathi Pu College</li>
+                        <li><span>2023-Current</span><br>Pursuing ENGINEERING at NHCE Banglore</li>
+                    </ul>
+                </div>
+            </div>
+
+    </div>
+    </div>
+    </div>
+<!-----------------portfolio--------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/blind.jpeg">
+                <div class="layer">
+                    <h3>IOT PROJECT</h3>
+                    <p>The blind spot monitoring system implemented using an LED strip and an ultrasonic 
+                        sensor provides a solution for detecting blinds spots in a given area.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/online menu.webp">
+                <div class="layer">
+                    <h3> C PROJECT</h3>
+                    <p>It helps in saving customers time from showing menu in online so that they can order in online but It's different from zomato.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/tic.png">
+                <div class="layer">
+                    <h3>PYTHON PROJECT</h3>
+                    <p>Perfect Information Games are the games in which every player knows the result of all previous moves and that is applicable in Tic Tac toe.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+ </div> 
+ <!---------------contact-------------->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>yashwanthpavan2511@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8618382730</p>
+                <div class="Social-icons">
+                    <a href="https://www.linkedin.com/in/yashwanth-pavan-kumar-kakumanu-92b07926b/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="" class="btn btn2">Download CV</a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Yashas D, NHCE Banglore.</p>
+    </div>
+
+
+ </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+     
+</script>
+</body>
+</html>

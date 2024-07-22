@@ -1,0 +1,17 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.menu-bar{
+    min-height: 8% ;
+    background: orange;
+}
+.menu-bar img
+{
+    width:65px;
+}
+.nav-link
+{
+    color: white;
+}
